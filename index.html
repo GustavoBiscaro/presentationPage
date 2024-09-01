@@ -1,13 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/normalize/normalize.css">
-    <link rel="stylesheet" href="./assets/css/styles.css">
-    <title>Página de apresentação</title>
-</head>
-<body>
-    
-</body>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./assets/css/normalize/normalize.css">
+        <link rel="stylesheet" href="./assets/css/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+        <title>Página de apresentação</title>
+    </head>
+
+    <body>
+        <header>
+
+            <nav id="nav-menu">
+                <div class="logo"><a class="link" href="#"><img src="./assets/img/logo-transparent.png" alt="logo"></a>
+                </div>
+
+                <div id="menuMobile">
+                    <div class="nm_line"></div>
+                    <div class="nm_line"></div>
+                    <div class="nm_line"></div>
+                </div>
+                <ul id="main-menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="line"></div>
+
+        <section id="banner">
+
+            <h2>O Legado</h2>
+            <ul>
+                <li>O mundo de Hogwarts diretamente em sua casa!</li>
+                <li>Conheça a saga do bruxo mais famoso do mundo!</li>
+                <li>Milhares de pessoas já leram ao redor do mundo!</li>
+                <li>Uma saga que ensina lições valiosas para a vida!</li>
+            </ul>
+
+
+            <div id="form">
+                <h2>Receba ofertas <span id="free">gratuitas</span> no seu email</h2>
+                <form>
+
+                    <label for="name">Nome completo</label>
+                    <input type="text" id="name" placeholder="Digite seu nome">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Insira seu email">
+
+                    <button id="products-button" type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+        <div class="line"></div>
+
+        <section id="products">
+            <div class="container">
+
+                <div id="book">
+                    <h2>Coletânea</h2>
+                    <figure>
+                        <img src="./assets/img/produto.png" alt="book-collection" class="books">
+                        <figcaption>Box completo - Saga Harry Potter</figcaption>
+                    </figure>
+
+                    <h2>Harry Potter e a Pedra Filosofal</h2>
+                    <figure>
+                        <img src="./assets/img/pedra filosofal.jpg" alt="book-collection" class="books">
+                        <figcaption>Harry Potter e a Pedra Filosofal</figcaption>
+                    </figure>
+
+                    <h2>Harry Potter e a Câmara Secreta</h2>
+                    <figure>
+                        <img src="./assets/img/camara-secreta-book.webp" alt="book-collection" class="books">
+                        <figcaption>Harry Potter e a Câmara Secreta</figcaption>
+                    </figure>
+
+                    <h2>Harry Potter e o Prisioneiro de Azkaban</h2>
+                    <figure>
+                        <img src="./assets/img/prisioneiro de azkaban.jpg" alt="book-collection" class="books">
+                        <figcaption>Harry Potter e o Prisioneiro de Azkaban</figcaption>
+                    </figure>
+
+                    <h2>Harry Potter e a Cálice de Fogo</h2>
+                    <figure>
+                        <img src="./assets/img/cálice de fogo.jpg" alt="book-collection" class="books">
+                        <figcaption>Harry Potter e a Cálice de Fogo</figcaption>
+                    </figure>
+
+                    <h2>Harry Potter e a Ordem da Fênix</h2>
+                    <figure>
+                        <img src="./assets/img/ordem da fênix.jpg" alt="book-collection" class="books">
+                        <figcaption>Harry Potter e a Ordem da Fênix</figcaption>
+                    </figure>
+
+                    <h2>Harry Potter e o Enigma Do Príncipe</h2>
+                    <figure>
+                        <img src="./assets/img/enigma do principe.jpg" alt="book-collection" class="books">
+                        <figcaption>Harry Potter e a Ordem da Fênix</figcaption>
+                    </figure>
+
+                    <h2>Harry Potter e as Relíquias Da Morte</h2>
+                    <figure>
+                        <img src="./assets/img/reliquias da morte.webp" alt="book-collection" class="books">
+                        <figcaption>Harry Potter e as Relíquias da Morte</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+        <div class="line"></div>
+
+        <section id="vendas">
+            <div class="callToAction">
+                <h2>Quero adquirir <span class="desconto"><a href="#">R$ 20,00 de Desconto</a></span> em todos os livros
+                </h2>
+                <form id="call-form">
+                    <label for="name">Nome completo</label>
+                    <input type="text" id="name" placeholder="Digite seu nome">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Insira seu email">
+
+                    <button type="submit">QUERO SER CLUB</button>
+                </form>
+            </div>
+        </section>
+        <div class="line"></div>
+        <section id="section-tabela-preco">
+            <h2>Tabelamento</h2>
+            <table id="price-table" width="400">
+                <thead>
+                    <tr>
+                        <th>1 Livro</th>
+
+                        <th>2 Livros</th>
+
+                        <th>3 Livros</th>
+
+                        <th>Coletânea</th>
+
+
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>R$ 19,90</td>
+                        <td>R$ 30,00</td>
+                        <td>R$ 46,90</td>
+                        <td>R$ 345,00</td>
+                    </tr>
+
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="merchandising">
+                <h3>Você sabia que sendo membro do Clube de Leitura você economiza até 30% em Compras?</h3>
+                <button type="submit">QUERO SER CLUB</button>
+                <button type="submit">Checkout</button>
+            </div>
+        </section>
+        <div class="line"></div>
+        <footer>
+            <p>©2024 - All rights reserved - Desenvolvido por Gustavo Biscaro</p>
+        </footer>
+
+
+
+        <script type="text/javascript" src="./assets/js/scripts.js"></script>
+    </body>
+
 </html>
