@@ -982,7 +982,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
 
     * {
         font-family: "Inter", sans-serif;
@@ -1439,7 +1439,7 @@
 
 }
 
-@media (max-width: 1125px) {
+@media (min-width: 1125px) {
     header #nav-menu .logo a img {
         width: 4vw;
         margin-top: 1vh;
@@ -1464,9 +1464,6 @@
     }
 }
 
-@media (min-width: 1080){
-    
-}
 
 @media (min-width: 1626px) {
     #banner ul li {
