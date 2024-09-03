@@ -961,7 +961,28 @@
 
 }
 
-@media (min-width: 768px) {
+@media (max-width: 618px) {
+    #form form button[type="submit"] {
+        margin-bottom: 15%;
+        padding: 15px;
+        color: #fff;
+        background-color: #b9b717;
+        font-weight: bolder;
+        border-radius: 15px;
+        cursor: pointer;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+        border: 1px solid #000;
+        animation-name: animacaoText;
+        animation-duration: 2s;
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
+    }
+}
+
+@media (max-width: 768px) {
 
     * {
         font-family: "Inter", sans-serif;
@@ -1418,7 +1439,7 @@
 
 }
 
-@media (min-width: 1125px) {
+@media (max-width: 1125px) {
     header #nav-menu .logo a img {
         width: 4vw;
         margin-top: 1vh;
@@ -1441,6 +1462,10 @@
         color: #fff;
         font-weight: bolder;
     }
+}
+
+@media (min-width: 1080){
+    
 }
 
 @media (min-width: 1626px) {
@@ -1477,6 +1502,8 @@
         font-weight: bolder;
     }
 }
+
+
 
 @media (min-width: 2541px) {
     #banner ul li {
