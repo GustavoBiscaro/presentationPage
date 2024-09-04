@@ -1,134 +1,1268 @@
-
-@media (max-width: 360px) {
-
+@media (min-width: 1px) and (max-width: 374px) {
     * {
         font-family: "Inter", sans-serif;
     }
 
-    #form {
+    /* NAVEGAÇÃO */
+    header {
+        width: 100%;
+        height: auto;
+        background-image: url('../img/Wallpapers/book-wallpaper.jpg');
+
+    }
+
+
+    #menuMobile {
+        margin: 0;
+        padding: 0;
+    }
+
+    .logo {
+        display: flex;
+        width: 10vw;
+        margin-right: 60vw;
+    }
+
+    .logo img {
         display: flex;
         flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 10vw;
+        color: #fff;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+
+    }
+
+    #nav-menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
         align-items: center;
 
-        justify-content: center;
+    }
+
+    #main-menu {
+        display: none;
+        height: 100%;
+
+    }
+
+    #main-menu.menuAberto {
+        display: flex;
+        flex-direction: column;
+        padding: 5vw;
+    }
+
+    .line {
+        height: 2px;
+        width: 100%;
+        background-color: #b9b717;
+    }
+
+
+
+    #main-menu li a {
+        display: flex;
+        list-style: none;
+        text-decoration: none;
+        margin-left: 5vw;
+        list-style: none;
+        padding: 2%;
+        font-weight: bolder;
+        color: #FC7B08;
+    }
+
+    #main-menu li a:hover {
+        text-decoration: underline;
+        text-decoration-color: #b9b717;
+        -moz-text-decoration-color: #b9b717;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .nm_line {
+        height: 0.7vw;
+        width: 4vw;
+        background-color: #b9b717;
+        margin-top: 2px;
+        margin-left: 2vw;
+        margin-right: 11vw;
+    }
+
+    /* FIM NAVEGAÇÃO */
+
+    /* BANNER */
+    #banner {
+        display: flex;
+        flex-direction: column;
+        background-image: url('../img/Wallpapers/wallpaper_star.png');
+
+    }
+
+    #banner h2 {
+        font-family: "Libre Baskerville", serif;
+        color: #b9b717;
+        font-size: 1.2em;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    #banner #free {
+        color: #b9b717;
+        font-weight: bolder;
+    }
+
+    #banner ul {
+        list-style: none;
+
+    }
+
+    #banner li {
+        background-image: url('../img/ok-transparent.png');
+        background-size: auto 15px;
+        background-repeat: no-repeat;
+        padding-left: 30px;
+        line-height: 2.5vh;
+        font-family: "Libre Baskerville", serif;
+        font-size: 1em;
+        margin-right: 2vw;
+    }
+
+
+    /* FORM */
+
+    #form {
+        background-image: url('../img/hogwarts.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: auto;
     }
 
     #form h2 {
         font-size: 14px;
     }
 
-    #form label {
-        font-size: 12px;
+
+
+
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 50vw;
+        margin-left: 25vw;
+        margin-right: 25vw;
     }
 
-    #form input {
+    form input {
+        padding: 10px;
         font-size: 12px;
+        font-weight: bolder;
+        margin-bottom: 2vh;
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+    }
+
+    form label {
+        font-weight: bolder;
+        color: #fff;
+        text-align: center;
     }
 
     button[type="submit"] {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        width: 50vw;
-        font-size: 10px;
-        padding: 2px;
+        padding: 10px;
+        font-family: "Libre Baskerville", serif;
+        font-weight: bolder;
+        border: 2px solid #000;
+        color: #fff;
+        animation-name: animacaoText;
+        animation-duration: 2s;
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
         margin-bottom: 15%;
-
-    }
-}
-
-@media (max-width: 375px) {
-
-    * {
-        font-family: "Inter", sans-serif;
+        cursor: pointer;
+        /* FIM FORM */
     }
 
-    #banner #form {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: auto;
-        justify-content: center;
-    }
+    /* Collection */
 
-    #banner #form h2 {
-        font-size: 14px
-    }
-
-    #form label {
-        font-size: 12px;
-    }
-
-    #form input {
-        font-size: 12px;
-    }
-
-    #banner #form button[type="submit"] {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    .container h2 {
+        font-family: "Libre Baskerville", serif;
         text-align: center;
+        color: #b9b717;
+    }
+
+
+
+    #book figure figcaption {
+        padding: 15px;
+        text-align: center;
+        border-radius: 15px;
+        background-color: #FC7B08;
+        font-weight: bolder;
+        color: #fff;
+        box-shadow: 1px 1px 5px #000;
+    }
+
+    #book figure figcaption:hover {
+
+        opacity: 0.9;
+
+    }
+
+    #book {
+        background-image: url('../img/Wallpapers/wallpaper_star.png');
+    }
+
+    #book .books {
+
+        width: 70vw;
+        height: 40vh;
+        animation-name: imagemFlutuante;
+        animation-duration: 2s;
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
+        object-fit: cover;
+    }
+
+    /* Call To Action */
+
+
+
+    #vendas {
+        background-image: url('../img/Wallpapers/harry-potter-wallpaper.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        width: auto;
+
+    }
+
+    #vendas h2 {
+        margin: 0;
+        color: #b9b717;
+        padding: 15px;
+        text-align: center;
+        font-weight: bolder;
+        padding: 15px;
+    }
+
+    #call-form label {
+        color: #fff;
+        font-weight: bolder;
+    }
+
+    .callToAction h2 .desconto a {
+        color: #fff;
+        padding: 10px;
+        animation-name: animacaoTextSpan;
+        animation-duration: 2s;
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
+        text-decoration: none;
+    }
+
+
+
+    /* Fim Call To Action */
+
+    /* Tabelamento */
+    #section-tabela-preco {
+        background-image: url('../img/Wallpapers/wallpaper_star.png');
+
+    }
+
+    #section-tabela-preco h2 {
+        font-weight: bolder;
+        text-align: center;
+        color: #b9b717;
+        animation-name: animacaoTextSpan;
+        animation-duration: 2s;
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
+        text-decoration: none;
+
+    }
+
+    #price-table {
+        background-color: #fff;
+        margin-left: 2vw;
+
+    }
+
+    #price-table thead tr th {
+        background-color: #b9b717;
+        text-align: center;
+        color: #fff;
+    }
+
+    #price-table tbody tr td {
+        background-color: #FC7B08;
+        text-align: center;
+        padding: 10px;
+        color: #fff;
+    }
+
+    .merchandising {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .merchandising h3 {
         font-size: 14px;
         padding: 2px;
+        text-align: justify;
+        margin-left: 2vw;
+        margin-right: 2vw;
+        color: red;
+    }
+
+    .merchandising button[type="submit"] {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin-left: 1vw;
+        margin-right: 2vw;
+        margin-top: 1vh;
 
     }
 
+    /* Fim Tabelamento */
 
-    #form form label {
-        margin-bottom: 2%;
-    }
-
-    #form form input {
-        height: 1vh;
-        margin-bottom: 4%;
-        padding: 5px;
-    }
-
-    #form form button[type="submit"] {
+    footer {
         padding: 10px;
-    }
-
-    #vendas .callToAction h2 {
-        font-size: 12px;
-        margin-bottom: 1vh;
-    }
-
-    #vendas .callToAction #call-form label {
-        margin-bottom: 2%;
-        font-size: 12px;
-    }
-
-    #vendas .callToAction #call-form input {
-        height: 1vh;
-        margin-bottom: 4%;
-        padding: 5px;
-    }
-
-    #vendas .callToAction #call-form button[type="submit"] {
-        padding: 10px;
+        font-weight: 600;
+        color: #b9b717;
+        background-image: url('../img/Wallpapers/book-wallpaper.jpg');
+        background-size: cover;
+        text-align: center;
     }
 
     footer p {
         padding: 0;
         margin: 0;
     }
+
+    /* Animações */
+
+    @keyframes animacaoText {
+        0% {
+            background-color: #b9b717;
+        }
+
+        25% {
+            background-color: #FC7B08;
+
+        }
+
+        50% {
+            background-color: #b9b717;
+
+        }
+
+        75% {
+            background-color: #FC7B08
+        }
+
+        100% {
+            background-color: #b9b717;
+
+        }
+    }
+
+    @keyframes animacaoTextSpan {
+        0% {
+            color: #fff;
+        }
+
+        25% {
+            color: #FC7B08;
+
+        }
+
+        50% {
+            color: #fff;
+
+        }
+
+        75% {
+            color: #FC7B08
+        }
+
+        100% {
+            color: #fff;
+
+        }
+    }
+
+    @keyframes imagemFlutuante {
+        50% {
+            transform: translateY(-5%);
+            -webkit-transform: translateY(-5%);
+            -moz-transform: translateY(-5%);
+            -ms-transform: translateY(-5%);
+            -o-transform: translateY(-5%);
+        }
+    }
+
 }
 
-@media (max-width: 390px) {
-
+@media (min-width: 375px) and (max-width: 389px) {
     * {
         font-family: "Inter", sans-serif;
     }
 
+    /* NAVEGAÇÃO */
+    header {
+        width: 100%;
+        height: auto;
+        background-image: url('../img/Wallpapers/book-wallpaper.jpg');
+
+    }
+
+
+    #menuMobile {
+        margin: 0;
+        padding: 0;
+    }
+
+    .logo {
+        display: flex;
+        width: 10vw;
+        margin-right: 60vw;
+    }
+
+    .logo img {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 10vw;
+        color: #fff;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+
+    }
+
+    #nav-menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+
+    }
+
+    #main-menu {
+        display: none;
+        height: 100%;
+
+    }
+
+    #main-menu.menuAberto {
+        display: flex;
+        flex-direction: column;
+        padding: 5vw;
+    }
+
+    .line {
+        height: 2px;
+        width: 100%;
+        background-color: #b9b717;
+    }
+
+
+
+    #main-menu li a {
+        display: flex;
+        list-style: none;
+        text-decoration: none;
+        margin-left: 5vw;
+        list-style: none;
+        padding: 2%;
+        font-weight: bolder;
+        color: #FC7B08;
+    }
+
+    #main-menu li a:hover {
+        text-decoration: underline;
+        text-decoration-color: #b9b717;
+        -moz-text-decoration-color: #b9b717;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .nm_line {
+        height: 0.7vw;
+        width: 4vw;
+        background-color: #b9b717;
+        margin-top: 2px;
+        margin-left: 2vw;
+        margin-right: 11vw;
+    }
+
+    /* FIM NAVEGAÇÃO */
+
+    /* BANNER */
+    #banner {
+        display: flex;
+        flex-direction: column;
+        background-image: url('../img/Wallpapers/wallpaper_star.png');
+
+    }
+
+    #banner h2 {
+        font-family: "Libre Baskerville", serif;
+        color: #b9b717;
+        font-size: 1.2em;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    #banner #free {
+        color: #b9b717;
+        font-weight: bolder;
+    }
+
+    #banner ul {
+        list-style: none;
+
+    }
+
+    #banner li {
+        background-image: url('../img/ok-transparent.png');
+        background-size: auto 15px;
+        background-repeat: no-repeat;
+        padding-left: 30px;
+        line-height: 2.5vh;
+        font-family: "Libre Baskerville", serif;
+        font-size: 1em;
+        margin-right: 2vw;
+    }
+
+
+    /* FORM */
+
+    #form {
+        background-image: url('../img/hogwarts.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: auto;
+    }
+
+    #form h2 {
+        font-size: 14px;
+    }
+
+
+
+
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 50vw;
+        margin-left: 25vw;
+        margin-right: 25vw;
+    }
+
+    form input {
+        padding: 10px;
+        font-size: 12px;
+        font-weight: bolder;
+        margin-bottom: 2vh;
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+    }
+
+    form label {
+        font-weight: bolder;
+        color: #fff;
+        text-align: center;
+    }
+
+    button[type="submit"] {
+        padding: 10px;
+        font-family: "Libre Baskerville", serif;
+        font-weight: bolder;
+        border: 2px solid #000;
+        color: #fff;
+        animation-name: animacaoText;
+        animation-duration: 2s;
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+        margin-bottom: 15%;
+        cursor: pointer;
+        /* FIM FORM */
+    }
+
+    /* Collection */
+
+    .container h2 {
+        font-family: "Libre Baskerville", serif;
+        text-align: center;
+        color: #b9b717;
+    }
+
+
+
+    #book figure figcaption {
+        padding: 15px;
+        text-align: center;
+        border-radius: 15px;
+        background-color: #FC7B08;
+        font-weight: bolder;
+        color: #fff;
+        box-shadow: 1px 1px 5px #000;
+    }
+
+    #book figure figcaption:hover {
+
+        opacity: 0.9;
+
+    }
+
+    #book {
+        background-image: url('../img/Wallpapers/wallpaper_star.png');
+    }
+
+    #book .books {
+
+        width: 70vw;
+        height: 40vh;
+        animation-name: imagemFlutuante;
+        animation-duration: 2s;
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
+        object-fit: cover;
+    }
+
+    /* Call To Action */
+
+
+
+    #vendas {
+        background-image: url('../img/Wallpapers/harry-potter-wallpaper.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        width: auto;
+
+    }
+
+    #vendas h2 {
+        margin: 0;
+        color: #b9b717;
+        padding: 15px;
+        text-align: center;
+        font-weight: bolder;
+        padding: 15px;
+    }
+
+    #call-form label {
+        color: #fff;
+        font-weight: bolder;
+    }
+
+    .callToAction h2 .desconto a {
+        color: #fff;
+        padding: 10px;
+        animation-name: animacaoTextSpan;
+        animation-duration: 2s;
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
+        text-decoration: none;
+    }
+
+
+
+    /* Fim Call To Action */
+
+    /* Tabelamento */
+    #section-tabela-preco {
+        background-image: url('../img/Wallpapers/wallpaper_star.png');
+
+    }
+
+    #section-tabela-preco h2 {
+        font-weight: bolder;
+        text-align: center;
+        color: #b9b717;
+        animation-name: animacaoTextSpan;
+        animation-duration: 2s;
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
+        text-decoration: none;
+
+    }
+
     #price-table {
+        background-color: #fff;
+        margin-left: 2vw;
+
+    }
+
+    #price-table thead tr th {
+        background-color: #b9b717;
+        text-align: center;
+        color: #fff;
+    }
+
+    #price-table tbody tr td {
+        background-color: #FC7B08;
+        text-align: center;
+        padding: 10px;
+        color: #fff;
+    }
+
+    .merchandising {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .merchandising h3 {
+        font-size: 14px;
+        padding: 2px;
+        text-align: justify;
+        margin-left: 2vw;
+        margin-right: 2vw;
+        color: red;
+    }
+
+    .merchandising button[type="submit"] {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
         margin-left: 1vw;
-        margin-right: 1vw;
+        margin-right: 2vw;
+        margin-top: 1vh;
+
+    }
+
+    /* Fim Tabelamento */
+
+    footer {
+        padding: 10px;
+        font-weight: 600;
+        color: #b9b717;
+        background-image: url('../img/Wallpapers/book-wallpaper.jpg');
+        background-size: cover;
+        text-align: center;
+    }
+
+    footer p {
+        padding: 0;
+        margin: 0;
+    }
+
+    /* Animações */
+
+    @keyframes animacaoText {
+        0% {
+            background-color: #b9b717;
+        }
+
+        25% {
+            background-color: #FC7B08;
+
+        }
+
+        50% {
+            background-color: #b9b717;
+
+        }
+
+        75% {
+            background-color: #FC7B08
+        }
+
+        100% {
+            background-color: #b9b717;
+
+        }
+    }
+
+    @keyframes animacaoTextSpan {
+        0% {
+            color: #fff;
+        }
+
+        25% {
+            color: #FC7B08;
+
+        }
+
+        50% {
+            color: #fff;
+
+        }
+
+        75% {
+            color: #FC7B08
+        }
+
+        100% {
+            color: #fff;
+
+        }
+    }
+
+    @keyframes imagemFlutuante {
+        50% {
+            transform: translateY(-5%);
+            -webkit-transform: translateY(-5%);
+            -moz-transform: translateY(-5%);
+            -ms-transform: translateY(-5%);
+            -o-transform: translateY(-5%);
+        }
     }
 
 }
 
-@media (max-width: 414px) {
+@media (min-width: 390px) and (max-width: 413px) {
+    * {
+        font-family: "Inter", sans-serif;
+    }
+
+    /* NAVEGAÇÃO */
+    header {
+        width: 100%;
+        height: auto;
+        background-image: url('../img/Wallpapers/book-wallpaper.jpg');
+
+    }
+
+
+    #menuMobile {
+        margin: 0;
+        padding: 0;
+    }
+
+    .logo {
+        display: flex;
+        width: 10vw;
+        margin-right: 60vw;
+    }
+
+    .logo img {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 10vw;
+        color: #fff;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+
+    }
+
+    #nav-menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+
+    }
+
+    #main-menu {
+        display: none;
+        height: 100%;
+
+    }
+
+    #main-menu.menuAberto {
+        display: flex;
+        flex-direction: column;
+        padding: 5vw;
+    }
+
+    .line {
+        height: 2px;
+        width: 100%;
+        background-color: #b9b717;
+    }
+
+
+
+    #main-menu li a {
+        display: flex;
+        list-style: none;
+        text-decoration: none;
+        margin-left: 5vw;
+        list-style: none;
+        padding: 2%;
+        font-weight: bolder;
+        color: #FC7B08;
+    }
+
+    #main-menu li a:hover {
+        text-decoration: underline;
+        text-decoration-color: #b9b717;
+        -moz-text-decoration-color: #b9b717;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .nm_line {
+        height: 0.7vw;
+        width: 4vw;
+        background-color: #b9b717;
+        margin-top: 2px;
+        margin-left: 2vw;
+        margin-right: 11vw;
+    }
+
+    /* FIM NAVEGAÇÃO */
+
+    /* BANNER */
+    #banner {
+        display: flex;
+        flex-direction: column;
+        background-image: url('../img/Wallpapers/wallpaper_star.png');
+
+    }
+
+    #banner h2 {
+        font-family: "Libre Baskerville", serif;
+        color: #b9b717;
+        font-size: 1.2em;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    #banner #free {
+        color: #b9b717;
+        font-weight: bolder;
+    }
+
+    #banner ul {
+        list-style: none;
+
+    }
+
+    #banner li {
+        background-image: url('../img/ok-transparent.png');
+        background-size: auto 15px;
+        background-repeat: no-repeat;
+        padding-left: 30px;
+        line-height: 2.5vh;
+        font-family: "Libre Baskerville", serif;
+        font-size: 1em;
+        margin-right: 2vw;
+    }
+
+
+    /* FORM */
+
+    #form {
+        background-image: url('../img/hogwarts.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: auto;
+    }
+
+    #form h2 {
+        font-size: 14px;
+    }
+
+
+
+
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 50vw;
+        margin-left: 25vw;
+        margin-right: 25vw;
+    }
+
+    form input {
+        padding: 10px;
+        font-size: 12px;
+        font-weight: bolder;
+        margin-bottom: 2vh;
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+    }
+
+    form label {
+        font-weight: bolder;
+        color: #fff;
+        text-align: center;
+    }
+
+    button[type="submit"] {
+        padding: 10px;
+        font-family: "Libre Baskerville", serif;
+        font-weight: bolder;
+        border: 2px solid #000;
+        color: #fff;
+        animation-name: animacaoText;
+        animation-duration: 2s;
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+        margin-bottom: 15%;
+        cursor: pointer;
+        /* FIM FORM */
+    }
+
+    /* Collection */
+
+    .container h2 {
+        font-family: "Libre Baskerville", serif;
+        text-align: center;
+        color: #b9b717;
+    }
+
+
+
+    #book figure figcaption {
+        padding: 15px;
+        text-align: center;
+        border-radius: 15px;
+        background-color: #FC7B08;
+        font-weight: bolder;
+        color: #fff;
+        box-shadow: 1px 1px 5px #000;
+    }
+
+    #book figure figcaption:hover {
+
+        opacity: 0.9;
+
+    }
+
+    #book {
+        background-image: url('../img/Wallpapers/wallpaper_star.png');
+    }
+
+    #book .books {
+
+        width: 70vw;
+        height: 40vh;
+        animation-name: imagemFlutuante;
+        animation-duration: 2s;
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
+        object-fit: cover;
+    }
+
+    /* Call To Action */
+
+
+
+    #vendas {
+        background-image: url('../img/Wallpapers/harry-potter-wallpaper.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        width: auto;
+
+    }
+
+    #vendas h2 {
+        margin: 0;
+        color: #b9b717;
+        padding: 15px;
+        text-align: center;
+        font-weight: bolder;
+        padding: 15px;
+    }
+
+    #call-form label {
+        color: #fff;
+        font-weight: bolder;
+    }
+
+    .callToAction h2 .desconto a {
+        color: #fff;
+        padding: 10px;
+        animation-name: animacaoTextSpan;
+        animation-duration: 2s;
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
+        text-decoration: none;
+    }
+
+
+
+    /* Fim Call To Action */
+
+    /* Tabelamento */
+    #section-tabela-preco {
+        background-image: url('../img/Wallpapers/wallpaper_star.png');
+
+    }
+
+    #section-tabela-preco h2 {
+        font-weight: bolder;
+        text-align: center;
+        color: #b9b717;
+        animation-name: animacaoTextSpan;
+        animation-duration: 2s;
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
+        text-decoration: none;
+
+    }
+
+    #price-table {
+        background-color: #fff;
+        margin-left: 2vw;
+
+    }
+
+    #price-table thead tr th {
+        background-color: #b9b717;
+        text-align: center;
+        color: #fff;
+    }
+
+    #price-table tbody tr td {
+        background-color: #FC7B08;
+        text-align: center;
+        padding: 10px;
+        color: #fff;
+    }
+
+    .merchandising {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .merchandising h3 {
+        font-size: 14px;
+        padding: 2px;
+        text-align: justify;
+        margin-left: 2vw;
+        margin-right: 2vw;
+        color: red;
+    }
+
+    .merchandising button[type="submit"] {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin-left: 1vw;
+        margin-right: 2vw;
+        margin-top: 1vh;
+
+    }
+
+    /* Fim Tabelamento */
+
+    footer {
+        padding: 10px;
+        font-weight: 600;
+        color: #b9b717;
+        background-image: url('../img/Wallpapers/book-wallpaper.jpg');
+        background-size: cover;
+        text-align: center;
+    }
+
+    footer p {
+        padding: 0;
+        margin: 0;
+    }
+
+    /* Animações */
+
+    @keyframes animacaoText {
+        0% {
+            background-color: #b9b717;
+        }
+
+        25% {
+            background-color: #FC7B08;
+
+        }
+
+        50% {
+            background-color: #b9b717;
+
+        }
+
+        75% {
+            background-color: #FC7B08
+        }
+
+        100% {
+            background-color: #b9b717;
+
+        }
+    }
+
+    @keyframes animacaoTextSpan {
+        0% {
+            color: #fff;
+        }
+
+        25% {
+            color: #FC7B08;
+
+        }
+
+        50% {
+            color: #fff;
+
+        }
+
+        75% {
+            color: #FC7B08
+        }
+
+        100% {
+            color: #fff;
+
+        }
+    }
+
+    @keyframes imagemFlutuante {
+        50% {
+            transform: translateY(-5%);
+            -webkit-transform: translateY(-5%);
+            -moz-transform: translateY(-5%);
+            -ms-transform: translateY(-5%);
+            -o-transform: translateY(-5%);
+        }
+    }
+
+}
+
+
+@media (min-width: 414px) and (max-width: 429px) {
 
     * {
         font-family: "Inter", sans-serif;
@@ -545,7 +1679,7 @@
 
 }
 
-@media (max-width: 430px) {
+@media (min-width: 430px) and (max-width: 617px) {
 
     * {
         font-family: "Inter", sans-serif;
@@ -961,81 +2095,61 @@
 
 }
 
-@media (max-width: 618px) {
-    #form form button[type="submit"] {
-        margin-bottom: 15%;
-        padding: 15px;
-        color: #fff;
-        background-color: #b9b717;
-        font-weight: bolder;
-        border-radius: 15px;
-        cursor: pointer;
-        -webkit-border-radius: 15px;
-        -moz-border-radius: 15px;
-        -ms-border-radius: 15px;
-        -o-border-radius: 15px;
-        border: 1px solid #000;
-        animation-name: animacaoText;
-        animation-duration: 2s;
-        animation-delay: 2s;
-        animation-iteration-count: infinite;
-    }
-}
-
-@media (min-width: 768px) {
-
+@media (min-width: 618px) and (max-width: 767px) {
     * {
         font-family: "Inter", sans-serif;
     }
 
+    /* NAVEGAÇÃO */
     header {
         width: 100%;
+        height: auto;
         background-image: url('../img/Wallpapers/book-wallpaper.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
+
     }
 
-    header #menuMobile {
-        display: none;
+
+    #menuMobile {
+        margin: 0;
+        padding: 0;
     }
 
-    header #nav-menu {
+    .logo {
+        display: flex;
+        width: 10vw;
+        margin-right: 60vw;
+    }
+
+    .logo img {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 10vw;
+        color: #fff;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+
+    }
+
+    #nav-menu {
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
-        align-items: flex-end;
-    }
-
-    header #nav-menu .logo a img {
-        width: 4vw;
-        margin-top: 2vh;
-        margin-bottom: 2vh;
-        margin-right: 55vw;
+        align-items: center;
 
     }
 
-    header #nav-menu #main-menu {
+    #main-menu {
+        display: none;
+        height: 100%;
+
+    }
+
+    #main-menu.menuAberto {
         display: flex;
-        flex-direction: row;
-    }
-
-    header #nav-menu #main-menu li {
-        list-style: none;
-        margin-right: 3vw;
-        margin-top: 1vh;
-        margin-bottom: 1vh;
-    }
-
-    header #nav-menu #main-menu li a {
-        text-decoration: none;
-        color: #FC7B08;
-        font-weight: bolder;
-    }
-
-    header #nav-menu #main-menu li a:hover {
-        text-decoration: underline;
-        text-decoration-color: #b9b717;
-        -moz-text-decoration-color: #b9b717;
+        flex-direction: column;
+        padding: 5vw;
     }
 
     .line {
@@ -1044,86 +2158,102 @@
         background-color: #b9b717;
     }
 
-    /* Fim navegação */
 
-    /* Banner */
+
+    #main-menu li a {
+        display: flex;
+        list-style: none;
+        text-decoration: none;
+        margin-left: 5vw;
+        list-style: none;
+        padding: 2%;
+        font-weight: bolder;
+        color: #FC7B08;
+    }
+
+    #main-menu li a:hover {
+        text-decoration: underline;
+        text-decoration-color: #b9b717;
+        -moz-text-decoration-color: #b9b717;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .nm_line {
+        height: 0.7vw;
+        width: 4vw;
+        background-color: #b9b717;
+        margin-top: 2px;
+        margin-left: 2vw;
+        margin-right: 11vw;
+    }
+
+    /* FIM NAVEGAÇÃO */
+
+    /* BANNER */
     #banner {
-        background-image: url('../img/Wallpapers/wallpaper.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        width: 100vw;
-
+        display: flex;
+        flex-direction: column;
+        background-image: url('../img/Wallpapers/wallpaper_star.png');
 
     }
 
     #banner h2 {
-        margin-top: 0;
-
-        font-size: 2em;
-        display: flex;
-        align-items: center;
+        font-family: "Libre Baskerville", serif;
+        color: #b9b717;
+        font-size: 1.2em;
         text-align: center;
-        justify-content: center;
-        text-shadow: 1px 1px 10px #b9b717;
-        padding: 15px;
+        white-space: nowrap;
+    }
 
-
+    #banner #free {
+        color: #b9b717;
+        font-weight: bolder;
     }
 
     #banner ul {
-        display: flex;
-        flex-direction: column;
-    }
-
-
-    #banner ul li {
         list-style: none;
-        font-size: 1.7em;
-        text-align: center;
-        margin-top: 10px;
-        padding: 15px;
-        background-image: url('../img/ok-transparent.png');
-        background-size: 30px auto;
-        background-position: 2%;
-        background-repeat: no-repeat;
 
-        color: #fff;
-        font-weight: bolder;
     }
+
+    #banner li {
+        background-image: url('../img/ok-transparent.png');
+        background-size: auto 15px;
+        background-repeat: no-repeat;
+        padding-left: 30px;
+        line-height: 2.5vh;
+        font-family: "Libre Baskerville", serif;
+        font-size: 1em;
+        margin-right: 2vw;
+    }
+
+
+    /* FORM */
 
     #form {
+        background-image: url('../img/hogwarts.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 30vh;
+        width: auto;
+
+    }
+
+    form {
         display: flex;
         flex-direction: column;
-        width: 100%;
-
+        width: 50vw;
+        margin-left: 25vw;
+        margin-right: 25vw;
     }
 
-
-
-    #form h2 #free {
-        margin: 10px;
-    }
-
-    #form form {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: auto;
-        justify-content: center;
-
-
-    }
-
-    #form form label {
-        font-size: 2em;
-        margin-bottom: 1vh;
-        color: #fff;
-
-    }
-
-    #form form input {
-        margin-bottom: 1vh;
+    form input {
         padding: 10px;
+        font-size: 12px;
+        font-weight: bolder;
+        margin-bottom: 2vh;
         border-radius: 15px;
         -webkit-border-radius: 15px;
         -moz-border-radius: 15px;
@@ -1131,58 +2261,43 @@
         -o-border-radius: 15px;
     }
 
-    #form form button[type="submit"] {
-        margin-bottom: 1vh;
-        padding: 15px;
-        color: #fff;
-        background-color: #b9b717;
+    form label {
         font-weight: bolder;
-        border-radius: 15px;
-        cursor: pointer;
-        -webkit-border-radius: 15px;
-        -moz-border-radius: 15px;
-        -ms-border-radius: 15px;
-        -o-border-radius: 15px;
-        border: 1px solid #000;
+        color: #fff;
+        text-align: center;
+    }
+
+    button[type="submit"] {
+        padding: 10px;
+        font-family: "Libre Baskerville", serif;
+        font-weight: bolder;
+        border: 2px solid #000;
+        color: #fff;
         animation-name: animacaoText;
         animation-duration: 2s;
         animation-delay: 2s;
         animation-iteration-count: infinite;
-    }
-
-
-    #products {
-        background: linear-gradient(90deg, rgba(0, 0, 0, 0.796) 0%, rgb(81, 9, 204) 35%, rgb(17, 9, 63) 100%);
-    }
-
-    #products .container #products .container h2 {
-        font-family: "Libre Baskerville", serif;
-        text-align: center;
-        color: #b9b717;
-
-    }
-
-    #book h2 {
-        text-align: center;
-        color: #b9b717;
-        background-color: #000;
-        padding: 10px;
         border-radius: 15px;
         -webkit-border-radius: 15px;
         -moz-border-radius: 15px;
         -ms-border-radius: 15px;
         -o-border-radius: 15px;
+        margin-bottom: 2vh;
+        cursor: pointer;
+        /* FIM FORM */
     }
 
-    #book figure {
+    /* Collection */
 
-        width: 100%;
+    .container h2 {
+        font-family: "Libre Baskerville", serif;
+        text-align: center;
+        color: #b9b717;
     }
+
+
 
     #book figure figcaption {
-
-        margin-left: 25vw;
-        margin-right: 25vw;
         padding: 15px;
         text-align: center;
         border-radius: 15px;
@@ -1199,17 +2314,13 @@
     }
 
     #book {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
         background-image: url('../img/Wallpapers/wallpaper_star.png');
     }
 
     #book .books {
-        width: 25vw;
-        height: 25vh;
+
+        width: 70vw;
+        height: 40vh;
         animation-name: imagemFlutuante;
         animation-duration: 2s;
         animation-delay: 2s;
@@ -1217,7 +2328,18 @@
         object-fit: cover;
     }
 
-    /* Fim collection */
+    /* Call To Action */
+
+
+
+    #vendas {
+        background-image: url('../img/Wallpapers/harry-potter-wallpaper.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        width: auto;
+
+    }
 
     #vendas h2 {
         margin: 0;
@@ -1226,50 +2348,12 @@
         text-align: center;
         font-weight: bolder;
         padding: 15px;
-    }  
-
-    #call-form {
-        display: flex;
-        flex-direction: column;
     }
 
     #call-form label {
-        color: #000;
-        font-size: 20px;
-        font-weight: bolder;
-        margin-bottom: 1%;
-        margin-left: 3vw;
-        text-align: center;
-    }
-    #call-form input {
-        color: #000;
-        font-weight: bolder;
-        margin: 2vh;
-        padding: 10px;
-    }
-
-    #call-form button[type="submit"] {
-        margin-left: 36vw;
-        margin-right: 36vw;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        background-color: #b9b717;
         color: #fff;
         font-weight: bolder;
-        padding: 15px;
-        margin-bottom: 2vh;
-        animation-name: animacaoText;
-        animation-duration: 2s;
-        animation-delay: 2s;
-        animation-iteration-count: infinite;
-        text-decoration: none;
-        border-radius: 15px;
-        -webkit-border-radius: 15px;
-        -moz-border-radius: 15px;
-        -ms-border-radius: 15px;
-        -o-border-radius: 15px;
-}
+    }
 
     .callToAction h2 .desconto a {
         color: #fff;
@@ -1344,19 +2428,6 @@
         margin-left: 1vw;
         margin-right: 2vw;
         margin-top: 1vh;
-        animation-name: animacaoText;
-        animation-duration: 2s;
-        animation-delay: 2s;
-        animation-iteration-count: infinite;
-        text-decoration: none;
-        border-radius: 15px;
-        -webkit-border-radius: 15px;
-        -moz-border-radius: 15px;
-        -ms-border-radius: 15px;
-        -o-border-radius: 15px;
-        margin-bottom: 1vh;
-        font-weight: bolder;
-      
 
     }
 
@@ -1376,6 +2447,411 @@
         margin: 0;
     }
 
+    /* Animações */
+
+    @keyframes animacaoText {
+        0% {
+            background-color: #b9b717;
+        }
+
+        25% {
+            background-color: #FC7B08;
+
+        }
+
+        50% {
+            background-color: #b9b717;
+
+        }
+
+        75% {
+            background-color: #FC7B08
+        }
+
+        100% {
+            background-color: #b9b717;
+
+        }
+    }
+
+    @keyframes animacaoTextSpan {
+        0% {
+            color: #fff;
+        }
+
+        25% {
+            color: #FC7B08;
+
+        }
+
+        50% {
+            color: #fff;
+
+        }
+
+        75% {
+            color: #FC7B08
+        }
+
+        100% {
+            color: #fff;
+
+        }
+    }
+
+    @keyframes imagemFlutuante {
+        50% {
+            transform: translateY(-5%);
+            -webkit-transform: translateY(-5%);
+            -moz-transform: translateY(-5%);
+            -ms-transform: translateY(-5%);
+            -o-transform: translateY(-5%);
+        }
+    }
+
+
+}
+
+@media (min-width: 768px) and (max-width: 819px) {
+    * {
+        font-family: "Inter", sans-serif;
+    }
+
+    /* NAVEGAÇÃO */
+    header {
+        width: 100%;
+        height: auto;
+        background-image: url('../img/Wallpapers/book-wallpaper.jpg');
+    }
+
+
+    .logo {
+        display: flex;
+        width: 10vw;
+        margin-right: 16vw;
+    }
+
+    .logo img {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 10vw;
+        color: #fff;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+
+    }
+
+    #nav-menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+
+    }
+
+    #main-menu {
+        display: flex;
+        list-style: none;
+    }
+
+
+    .line {
+        height: 2px;
+        width: 100%;
+        background-color: #b9b717;
+    }
+
+    #main-menu li {
+        font-size: 1.5em;
+        margin-left: 5vw;
+        margin-right: 2vw;
+    }
+
+
+    #main-menu li a {
+
+        list-style: none;
+        text-decoration: none;
+        text-align: center;
+        list-style: none;
+
+        font-weight: bolder;
+        color: #FC7B08;
+    }
+
+    #main-menu li a:hover {
+        text-decoration: underline;
+        text-decoration-color: #b9b717;
+        -moz-text-decoration-color: #b9b717;
+    }
+
+    /* FIM NAVEGAÇÃO */
+
+    /* BANNER */
+    #banner {
+        display: flex;
+        flex-direction: column;
+        background-image: url('../img/Wallpapers/wallpaper_star.png');
+
+    }
+
+    #banner h2 {
+        font-family: "Libre Baskerville", serif;
+        color: #b9b717;
+        font-size: 1em;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    #banner #free {
+        color: #b9b717;
+        font-weight: bolder;
+        font-size: 1em;
+    }
+
+    #banner ul {
+        list-style: none;
+
+    }
+
+    #banner li {
+        background-image: url('../img/ok-transparent.png');
+        background-size: auto 15px;
+        background-repeat: no-repeat;
+        padding-left: 30px;
+        line-height: 2.5vh;
+        font-family: "Libre Baskerville", serif;
+        font-size: 1em;
+        margin-right: 2vw;
+    }
+
+
+    /* FORM */
+
+    #form {
+        background-image: url('../img/hogwarts.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: auto;
+    }
+
+    #form h2 {
+        font-size: 2em;
+    }
+
+
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 50vw;
+        margin-left: 25vw;
+        margin-right: 25vw;
+    }
+
+    form input {
+        padding: 10px;
+        font-size: 12px;
+        font-weight: bolder;
+        margin-bottom: 2vh;
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+    }
+
+    form label {
+        font-weight: bolder;
+        color: #fff;
+        text-align: center;
+    }
+
+    button[type="submit"] {
+        padding: 10px;
+        font-family: "Libre Baskerville", serif;
+        font-weight: bolder;
+        border: 2px solid #000;
+        color: #fff;
+        animation-name: animacaoText;
+        animation-duration: 2s;
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+        margin-bottom: 15%;
+        cursor: pointer;
+        /* FIM FORM */
+    }
+
+    /* Collection */
+
+    .container h2 {
+        font-family: "Libre Baskerville", serif;
+        text-align: center;
+        color: #b9b717;
+    }
+
+
+
+    #book figure figcaption {
+        padding: 15px;
+        text-align: center;
+        border-radius: 15px;
+        background-color: #FC7B08;
+        font-weight: bolder;
+        color: #fff;
+        box-shadow: 1px 1px 5px #000;
+    }
+
+    #book figure figcaption:hover {
+
+        opacity: 0.9;
+
+    }
+
+    #book {
+        background-image: url('../img/Wallpapers/wallpaper_star.png');
+    }
+
+    #book .books {
+
+        width: 50vw;
+        height: 40vh;
+        animation-name: imagemFlutuante;
+        animation-duration: 2s;
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
+        object-fit: cover;
+    }
+
+    /* Call To Action */
+
+
+
+    #vendas {
+        background-image: url('../img/Wallpapers/harry-potter-wallpaper.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        width: auto;
+
+    }
+
+    #vendas h2 {
+        margin: 0;
+        color: #b9b717;
+        padding: 15px;
+        text-align: center;
+        font-weight: bolder;
+        padding: 15px;
+    }
+
+    #call-form label {
+        color: #fff;
+        font-weight: bolder;
+    }
+
+    .callToAction h2 .desconto a {
+        color: #fff;
+        padding: 10px;
+        animation-name: animacaoTextSpan;
+        animation-duration: 2s;
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
+        text-decoration: none;
+    }
+
+
+
+    /* Fim Call To Action */
+
+    /* Tabelamento */
+    #section-tabela-preco {
+        background-image: url('../img/Wallpapers/wallpaper_star.png');
+        margin-bottom: 0vh;
+    }
+
+    #section-tabela-preco h2 {
+        font-weight: bolder;
+        text-align: center;
+        color: #b9b717;
+        animation-name: animacaoTextSpan;
+        animation-duration: 2s;
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
+        text-decoration: none;
+
+    }
+
+    #price-table {
+        background-color: #fff;
+        margin-left: 2vw;
+
+    }
+
+    #price-table thead tr th {
+        background-color: #b9b717;
+        text-align: center;
+        color: #fff;
+    }
+
+    #price-table tbody tr td {
+        background-color: #FC7B08;
+        text-align: center;
+        padding: 10px;
+        color: #fff;
+    }
+
+    .merchandising {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .merchandising h3 {
+        font-size: 1.5em;
+        text-align: justify;
+        margin-left: 10vw;
+        margin-right: 10vw;
+        color: red;
+    }
+
+    .merchandising button[type="submit"] {
+        display: flex;
+        flex-direction: row;
+        height: 100px;
+        width: 100px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 0;
+        object-fit: cover;
+
+        padding: 10px;
+
+
+    }
+
+    /* Fim Tabelamento */
+
+    footer {
+        padding: 10px;
+        font-weight: 600;
+        color: #b9b717;
+        background-image: url('../img/Wallpapers/book-wallpaper.jpg');
+        background-size: cover;
+        text-align: center;
+    }
+
+    footer p {
+        padding: 0;
+        margin: 0;
+    }
+
+    /* Animações */
 
     @keyframes animacaoText {
         0% {
@@ -1439,90 +2915,1253 @@
 
 }
 
-@media (min-width: 1125px) {
-    header #nav-menu .logo a img {
-        width: 4vw;
-        margin-top: 1vh;
-        margin-bottom: 1vh;
-        margin-right: 65vw;
+@media (min-width: 820px) and (max-width: 1023px) {
+
+    * {
+        font-family: "Inter", sans-serif;
+    }
+
+    /* NAVEGAÇÃO */
+    header {
+        width: 100%;
+        height: auto;
+        background-image: url('../img/Wallpapers/book-wallpaper.jpg');
+    }
+
+
+    .logo {
+        display: flex;
+        width: 10vw;
+        margin-right: 16vw;
+    }
+
+    .logo img {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 10vw;
+        color: #fff;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
 
     }
 
-    #banner ul li {
-        list-style: none;
-        font-size: 1.7em;
-        text-align: center;
-        margin-top: 10px;
-        padding: 15px;
-        background-image: url('../img/ok-transparent.png');
-        background-size: 30px auto;
-        background-position: 18%;
-        background-repeat: no-repeat;
+    #nav-menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
 
+    }
+
+    #main-menu {
+        display: flex;
+        list-style: none;
+    }
+
+
+    .line {
+        height: 2px;
+        width: 100%;
+        background-color: #b9b717;
+    }
+
+    #main-menu li {
+        font-size: 1.5em;
+        margin-left: 5vw;
+        margin-right: 2vw;
+    }
+
+
+    #main-menu li a {
+
+        list-style: none;
+        text-decoration: none;
+        text-align: center;
+        list-style: none;
+
+        font-weight: bolder;
+        color: #FC7B08;
+    }
+
+    #main-menu li a:hover {
+        text-decoration: underline;
+        text-decoration-color: #b9b717;
+        -moz-text-decoration-color: #b9b717;
+    }
+
+    /* FIM NAVEGAÇÃO */
+
+    /* BANNER */
+    #banner {
+        display: flex;
+        flex-direction: column;
+        background-image: url('../img/Wallpapers/wallpaper_star.png');
+
+    }
+
+    #banner h2 {
+        font-family: "Libre Baskerville", serif;
+        color: #b9b717;
+        font-size: 1em;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    #banner #free {
+        color: #b9b717;
+        font-weight: bolder;
+        font-size: 1em;
+    }
+
+    #banner ul {
+        list-style: none;
+
+    }
+
+    #banner li {
+        background-image: url('../img/ok-transparent.png');
+        background-size: auto 15px;
+        background-repeat: no-repeat;
+        padding-left: 30px;
+        line-height: 2.5vh;
+        font-family: "Libre Baskerville", serif;
+        font-size: 1em;
+        margin-right: 2vw;
+    }
+
+
+    /* FORM */
+
+    #form {
+        background-image: url('../img/hogwarts.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: auto;
+    }
+
+    #form h2 {
+        font-size: 2em;
+    }
+
+
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 50vw;
+        margin-left: 25vw;
+        margin-right: 25vw;
+    }
+
+    form input {
+        padding: 10px;
+        font-size: 12px;
+        font-weight: bolder;
+        margin-bottom: 2vh;
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+    }
+
+    form label {
+        font-weight: bolder;
+        color: #fff;
+        text-align: center;
+    }
+
+    button[type="submit"] {
+        padding: 10px;
+        font-family: "Libre Baskerville", serif;
+        font-weight: bolder;
+        border: 2px solid #000;
+        color: #fff;
+        animation-name: animacaoText;
+        animation-duration: 2s;
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+        margin-bottom: 15%;
+        cursor: pointer;
+        /* FIM FORM */
+    }
+
+    /* Collection */
+
+    .container h2 {
+        font-family: "Libre Baskerville", serif;
+        text-align: center;
+        color: #b9b717;
+    }
+
+
+
+    #book figure figcaption {
+        padding: 15px;
+        text-align: center;
+        border-radius: 15px;
+        background-color: #FC7B08;
+        font-weight: bolder;
+        color: #fff;
+        box-shadow: 1px 1px 5px #000;
+    }
+
+    #book figure figcaption:hover {
+
+        opacity: 0.9;
+
+    }
+
+    #book {
+        background-image: url('../img/Wallpapers/wallpaper_star.png');
+    }
+
+    #book .books {
+
+        width: 50vw;
+        height: 40vh;
+        animation-name: imagemFlutuante;
+        animation-duration: 2s;
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
+        object-fit: cover;
+    }
+
+    /* Call To Action */
+
+
+
+    #vendas {
+        background-image: url('../img/Wallpapers/harry-potter-wallpaper.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        width: auto;
+
+    }
+
+    #vendas h2 {
+        margin: 0;
+        color: #b9b717;
+        padding: 15px;
+        text-align: center;
+        font-weight: bolder;
+        padding: 15px;
+    }
+
+    #call-form label {
         color: #fff;
         font-weight: bolder;
     }
+
+    .callToAction h2 .desconto a {
+        color: #fff;
+        padding: 10px;
+        animation-name: animacaoTextSpan;
+        animation-duration: 2s;
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
+        text-decoration: none;
+    }
+
+
+
+    /* Fim Call To Action */
+
+    /* Tabelamento */
+    #section-tabela-preco {
+        background-image: url('../img/Wallpapers/wallpaper_star.png');
+        margin-bottom: 0vh;
+    }
+
+    #section-tabela-preco h2 {
+        font-weight: bolder;
+        text-align: center;
+        color: #b9b717;
+        animation-name: animacaoTextSpan;
+        animation-duration: 2s;
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
+        text-decoration: none;
+
+    }
+
+    #price-table {
+        background-color: #fff;
+        margin-left: 2vw;
+
+    }
+
+    #price-table thead tr th {
+        background-color: #b9b717;
+        text-align: center;
+        color: #fff;
+    }
+
+    #price-table tbody tr td {
+        background-color: #FC7B08;
+        text-align: center;
+        padding: 10px;
+        color: #fff;
+    }
+
+    .merchandising {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .merchandising h3 {
+        font-size: 1.5em;
+        text-align: justify;
+        margin-left: 10vw;
+        margin-right: 10vw;
+        color: red;
+    }
+
+    .merchandising button[type="submit"] {
+        display: flex;
+        flex-direction: row;
+        height: 100px;
+        width: 100px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 0;
+        object-fit: cover;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+
+
+    }
+
+    /* Fim Tabelamento */
+
+    footer {
+        padding: 10px;
+        font-weight: 600;
+        color: #b9b717;
+        background-image: url('../img/Wallpapers/book-wallpaper.jpg');
+        background-size: cover;
+        text-align: center;
+    }
+
+    footer p {
+        padding: 0;
+        margin: 0;
+    }
+
+    /* Animações */
+
+    @keyframes animacaoText {
+        0% {
+            background-color: #b9b717;
+        }
+
+        25% {
+            background-color: #FC7B08;
+
+        }
+
+        50% {
+            background-color: #b9b717;
+
+        }
+
+        75% {
+            background-color: #FC7B08
+        }
+
+        100% {
+            background-color: #b9b717;
+
+        }
+    }
+
+    @keyframes animacaoTextSpan {
+        0% {
+            color: #fff;
+        }
+
+        25% {
+            color: #FC7B08;
+
+        }
+
+        50% {
+            color: #fff;
+
+        }
+
+        75% {
+            color: #FC7B08
+        }
+
+        100% {
+            color: #fff;
+
+        }
+    }
+
+    @keyframes imagemFlutuante {
+        50% {
+            transform: translateY(-5%);
+            -webkit-transform: translateY(-5%);
+            -moz-transform: translateY(-5%);
+            -ms-transform: translateY(-5%);
+            -o-transform: translateY(-5%);
+        }
+    }
+
 }
 
+@media (min-width: 1024px) and (max-width: 1680px) {
+    * {
+        font-family: "Inter", sans-serif;
+    }
 
-@media (min-width: 1626px) {
-    #banner ul li {
+    /* NAVEGAÇÃO */
+    header {
+        width: 100%;
+        height: auto;
+        background-image: url('../img/Wallpapers/book-wallpaper.jpg');
+    }
+
+
+    .logo {
+        display: flex;
+        width: 10vw;
+        margin-right: 20%;
+
+    }
+
+    .logo img {
+        display: flex;
+        flex-direction: column;
+        width: 6vw;
+        color: #fff;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 15px;
+
+
+
+    }
+
+    #nav-menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+
+    }
+
+    #main-menu {
+        display: flex;
         list-style: none;
+    }
+
+
+    .line {
+        height: 2px;
+        width: 100%;
+        background-color: #b9b717;
+    }
+
+    #main-menu li {
+        font-size: 1.5em;
+        margin-left: 5vw;
+        margin-right: 2vw;
+    }
+
+
+    #main-menu li a {
+
+        list-style: none;
+        text-decoration: none;
+        text-align: center;
+        list-style: none;
+
+        font-weight: bolder;
+        color: #FC7B08;
+    }
+
+    #main-menu li a:hover {
+        text-decoration: underline;
+        text-decoration-color: #b9b717;
+        -moz-text-decoration-color: #b9b717;
+    }
+
+    /* FIM NAVEGAÇÃO */
+
+    #banner h2 {
+        font-family: "Libre Baskerville", serif;
+        color: #b9b717;
         font-size: 1.7em;
         text-align: center;
-        margin-top: 10px;
-        padding: 15px;
-        background-image: url('../img/ok-transparent.png');
-        background-size: 30px auto;
-        background-position: 28%;
-        background-repeat: no-repeat;
+        white-space: nowrap;
+    }
 
+    #banner #free {
+        color: #b9b717;
+        font-weight: bolder;
+        font-size: 1em;
+    }
+
+    #banner ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: url('../img/Wallpapers/wallpaper_star.png');
+
+    }
+
+    #banner li {
+        background-image: url('../img/ok-transparent.png');
+        background-size: auto 20px;
+        background-repeat: no-repeat;
+        font-weight: bolder;
+        font-family: "Libre Baskerville", serif;
+        line-height: 2vh;
+        font-size: 1.5em;
+        padding-left: 15px;
+        margin-top: 0.5vh;
+        margin-left: 1.5em;
+
+    }
+
+
+    #form {
+        background-image: url('../img/hogwarts.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+    #form h2 {
+        font-size: 2em;
+        padding: 15px;
+    }
+
+
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 50vw;
+        margin-left: 25vw;
+        margin-right: 25vw;
+    }
+
+    form input {
+        padding: 10px;
+        font-size: 1.4em;
+        font-weight: bolder;
+        margin-bottom: 2vh;
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+    }
+
+    form label {
+        font-weight: bolder;
+        color: #fff;
+        text-align: center;
+        font-size: 1.7em;
+    }
+
+    button[type="submit"] {
+        padding: 20px;
+        font-family: "Libre Baskerville", serif;
+        font-weight: bolder;
+        border: 2px solid #000;
+        color: #fff;
+        animation-name: animacaoText;
+        animation-duration: 2s;
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+        margin-bottom: 10%;
+        cursor: pointer;
+
+    }
+
+    .container h2 {
+        font-family: "Libre Baskerville", serif;
+        text-align: center;
+        color: #b9b717;
+        font-size: 2em;
+    }
+
+
+
+    #book figure figcaption {
+        padding: 15px;
+        text-align: center;
+        border-radius: 15px;
+        background-color: #FC7B08;
+        font-weight: bolder;
+        color: #fff;
+        box-shadow: 1px 1px 5px #000;
+        font-size: 2em;
+    }
+
+    #book figure figcaption:hover {
+
+        opacity: 0.9;
+
+    }
+
+    #book {
+        background-image: url('../img/Wallpapers/wallpaper_star.png');
+    }
+
+    #book .books {
+
+        width: 50vw;
+        height: 40vh;
+        animation-name: imagemFlutuante;
+        animation-duration: 2s;
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
+        object-fit: cover;
+    }
+
+
+    /* Call To Action */
+
+    #call-form button[type="submit"] {
+        font-size: 2em;
+    }
+
+    #vendas {
+        background-image: url('../img/Wallpapers/harry-potter-wallpaper.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        width: auto;
+
+    }
+
+    #vendas h2 {
+        margin: 0;
+        color: #b9b717;
+        padding: 15px;
+        text-align: center;
+        font-weight: bolder;
+        padding: 15px;
+    }
+
+    #call-form label {
         color: #fff;
         font-weight: bolder;
+    }
+
+    .callToAction h2 .desconto a {
+        color: #fff;
+        padding: 10px;
+        animation-name: animacaoTextSpan;
+        animation-duration: 2s;
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
+        text-decoration: none;
+    }
+
+
+
+    /* Fim Call To Action */
+
+    /* Tabelamento */
+    #section-tabela-preco {
+        background-image: url('../img/Wallpapers/wallpaper_star.png');
+        margin-bottom: 0vh;
+    }
+
+    #section-tabela-preco h2 {
+        font-weight: bolder;
+        text-align: center;
+        color: #b9b717;
+        animation-name: animacaoTextSpan;
+        animation-duration: 2s;
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
+        text-decoration: none;
+
+    }
+
+    #price-table {
+        background-color: #fff;
+        margin-left: 2vw;
+
+    }
+
+    #price-table thead tr th {
+        background-color: #b9b717;
+        text-align: center;
+        color: #fff;
+    }
+
+    #price-table tbody tr td {
+        background-color: #FC7B08;
+        text-align: center;
+        padding: 10px;
+        color: #fff;
+    }
+
+    .merchandising {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .merchandising h3 {
+        font-size: 1.5em;
+        text-align: justify;
+        margin-left: 10vw;
+        margin-right: 10vw;
+        color: red;
+    }
+
+    .merchandising button[type="submit"] {
+        display: flex;
+        flex-direction: row;
+        height: 100px;
+        width: 100px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 0;
+        object-fit: cover;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+
+
+    }
+
+    /* Fim Tabelamento */
+
+    footer {
+        padding: 10px;
+        font-weight: 600;
+        color: #b9b717;
+        background-image: url('../img/Wallpapers/book-wallpaper.jpg');
+        background-size: cover;
+        text-align: center;
+    }
+
+    footer p {
+        padding: 0;
+        margin: 0;
+    }
+
+
+    /* Animações */
+
+    @keyframes animacaoText {
+        0% {
+            background-color: #b9b717;
+        }
+
+        25% {
+            background-color: #FC7B08;
+
+        }
+
+        50% {
+            background-color: #b9b717;
+
+        }
+
+        75% {
+            background-color: #FC7B08
+        }
+
+        100% {
+            background-color: #b9b717;
+
+        }
+    }
+
+    @keyframes animacaoTextSpan {
+        0% {
+            color: #fff;
+        }
+
+        25% {
+            color: #FC7B08;
+
+        }
+
+        50% {
+            color: #fff;
+
+        }
+
+        75% {
+            color: #FC7B08
+        }
+
+        100% {
+            color: #fff;
+
+        }
+    }
+
+    @keyframes imagemFlutuante {
+        50% {
+            transform: translateY(-5%);
+            -webkit-transform: translateY(-5%);
+            -moz-transform: translateY(-5%);
+            -ms-transform: translateY(-5%);
+            -o-transform: translateY(-5%);
+        }
     }
 
 }
 
-@media (min-width: 1920px) {
-    #banner ul li {
-        list-style: none;
-        font-size: 1.7em;
-        text-align: center;
-        margin-top: 10px;
-        padding: 15px;
-        background-image: url('../img/ok-transparent.png');
-        background-size: 30px auto;
-        background-position: 36%;
-        background-repeat: no-repeat;
-
-        color: #fff;
-        font-weight: bolder;
-    }
-}
-
-
-
-@media (min-width: 2541px) {
-    #banner ul li {
-        list-style: none;
-        font-size: 1.7em;
-        text-align: center;
-        margin-top: 10px;
-        padding: 15px;
-        background-image: url('../img/ok-transparent.png');
-        background-size: 30px auto;
-        background-position: 36%;
-        background-repeat: no-repeat;
-
-        color: #fff;
-        font-weight: bolder;
+@media (min-width:1681px) and (orientation: landscape) {
+    * {
+        font-family: "Inter", sans-serif;
     }
 
-    header #nav-menu .logo a img {
+    /* NAVEGAÇÃO */
+    header {
+        width: 100%;
+        height: auto;
+        background-image: url('../img/Wallpapers/book-wallpaper.jpg');
+    }
+
+
+    .logo {
+        display: flex;
+        width: 10vw;
+        margin-right: 70%;
+
+
+    }
+
+    .logo img {
+        display: flex;
+        flex-direction: column;
         width: 2vw;
-        margin-top: 1vh;
-        margin-bottom: 1vh;
-        margin-right: 75vw;
+        color: #fff;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 15px;
+    }
+
+    #nav-menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
 
     }
+
+    #main-menu {
+        display: flex;
+        list-style: none;
+    }
+
+
+    .line {
+        height: 2px;
+        width: 100%;
+        background-color: #b9b717;
+    }
+
+    #main-menu li {
+        font-size: 1.5em;
+        margin-left: 2vw;
+        margin-right: 1vw;
+    }
+
+
+    #main-menu li a {
+
+        list-style: none;
+        text-decoration: none;
+        text-align: center;
+        list-style: none;
+
+        font-weight: bolder;
+        color: #FC7B08;
+    }
+
+    #main-menu li a:hover {
+        text-decoration: underline;
+        text-decoration-color: #b9b717;
+        -moz-text-decoration-color: #b9b717;
+    }
+
+    /* FIM NAVEGAÇÃO */
+
+    #banner h2 {
+        font-family: "Libre Baskerville", serif;
+        color: #b9b717;
+        font-size: 1.7em;
+        text-align: center;
+        white-space: nowrap;
+        text-shadow: 2px 2px 2px #000;
+    }
+
+    #banner #free {
+        color: #b9b717;
+        font-weight: bolder;
+        font-size: 1em;
+    }
+
+    #banner ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: url('../img/Wallpapers/wallpaper_star.png');
+    }
+
+    #banner li {
+        background-image: url('../img/ok-transparent.png');
+        background-size: auto 20px;
+        background-position-y: 50%;
+        background-repeat: no-repeat;
+        font-weight: bolder;
+        font-family: "Libre Baskerville", serif;
+        line-height: 4vh;
+        font-size: 1.5em;
+        padding-left: 15px;
+        margin-top: 0.5vh;
+        margin-left: 2px;
+    }
+
+
+
+    #form {
+        background-image: url('../img/Wallpapers/hogwarts-wallpaper-form.avif');
+        background-repeat: no-repeat;
+        background-size: cover;
+        object-fit: cover;
+
+    }
+
+    #form h2 {
+        font-size: 2em;
+        padding: 15px;
+    }
+
+
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 50vw;
+        margin-left: 25vw;
+        margin-right: 25vw;
+        
+    }
+
+    form input {
+        padding: 10px;
+        font-size: 2em;
+        font-weight: bolder;
+        margin-bottom: 2vh;
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+    }
+
+    form label {
+        font-weight: bolder;
+        color: #fff;
+        text-align: center;
+        font-size: 3em;
+    }
+
+    button[type="submit"] {
+        padding: 20px;
+        font-family: "Libre Baskerville", serif;
+        font-weight: bolder;
+        font-size: 4em;
+        border: 2px solid #000;
+        color: #fff;
+        animation-name: animacaoText;
+        animation-duration: 2s;
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+        margin-top: 3%;
+        margin-bottom: 3%;
+        cursor: pointer;
+        box-shadow: 1px 1px 2px #000;
+
+    }
+
+    .container h2 {
+        font-family: "Libre Baskerville", serif;
+        text-align: center;
+        color: #000;
+        font-size: 2em;
+    }
+
+
+
+    #book figure figcaption {
+        padding: 15px;
+        text-align: center;
+        border-radius: 15px;
+        background-color: #FC7B08;
+        font-weight: bolder;
+        color: #fff;
+        box-shadow: 1px 1px 5px #000;
+        font-size: 2em;
+    }
+
+    #book figure figcaption:hover {
+
+        opacity: 0.9;
+
+    }
+
+    #book {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: url('../img/Wallpapers/wallpaper_star.png');
+    }
+
+    #book .books {
+
+        width: 10vw;
+        height: 40vh;
+        animation-name: imagemFlutuante;
+        animation-duration: 2s;
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
+        object-fit: cover;
+        text-align: center;
+        align-items: center;
+    }
+
+
+    /* Call To Action */
+
+    #call-form button[type="submit"] {
+        font-size: 2em;
+    }
+
+    #vendas {
+        background-image: url('../img/Wallpapers/harry-potter-wallpaper.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        width: auto;
+
+    }
+
+    #vendas h2 {
+        margin: 0;
+        color: #b9b717;
+        padding: 15px;
+        text-align: center;
+        font-weight: bolder;
+        padding: 15px;
+        font-size: 2em;
+    }
+
+    #call-form label {
+        color: #fff;
+        font-weight: bolder;
+    }
+
+    .callToAction h2 .desconto a {
+        color: #fff;
+        padding: 10px;
+        animation-name: animacaoTextSpan;
+        animation-duration: 2s;
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
+        text-decoration: none;
+    }
+
+
+
+    /* Fim Call To Action */
+
+    /* Tabelamento */
+    #section-tabela-preco {
+        background-image: url('../img/Wallpapers/wallpaper_star.png');
+    }
+
+    #section-tabela-preco h2 {
+        font-weight: bolder;
+        text-align: center;
+        color: #b9b717;
+        animation-name: animacaoTextSpan;
+        animation-duration: 2s;
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
+        text-decoration: none;
+        font-size: 2em;
+
+    }
+
+    #price-table {
+      
+
+        background-color: #fff;
+        margin-left: 10vw;
+        margin-right: 10vw;
+        align-items: center;
+    }
+
+    #price-table thead tr th {
+        background-color: #b9b717;
+        text-align: center;
+        color: #fff;
+        width: 100vw;
+        padding: 15px;
+        font-size: 1.7em;
+    }
+
+    #price-table tbody tr td {
+   
+        background-color: #FC7B08;
+        text-align: center;
+        margin-left: 10vw;
+        margin-right: 10vw;
+        font-size: 1.4em;
+        padding: 15px;
+        font-weight: bolder;
+        color: #fff;
+    }
+
+    .merchandising {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .merchandising h3 {
+        font-size: 1.5em;
+        text-align: justify;
+        margin-left: 10vw;
+        margin-right: 10vw;
+        color: red;
+    }
+
+    .merchandising button[type="submit"] {
+
+        height: 100px;
+        font-size: 2em;
+        margin-bottom: 2vh;
+        margin-top: 0;
+        margin-left: 15vw;
+        margin-right: 15vw;
+        object-fit: cover;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+
+
+
+    }
+
+    /* Fim Tabelamento */
+
+    footer {
+        padding: 5px;
+        font-weight: 600;
+        color: #b9b717;
+        background-image: url('../img/Wallpapers/book-wallpaper.jpg');
+        background-size: cover;
+        text-align: center;
+        font-size: 2em;
+    }
+
+
+
+
+    /* Animações */
+
+    @keyframes animacaoText {
+        0% {
+            background-color: #b9b717;
+        }
+
+        25% {
+            background-color: #FC7B08;
+
+        }
+
+        50% {
+            background-color: #b9b717;
+
+        }
+
+        75% {
+            background-color: #FC7B08
+        }
+
+        100% {
+            background-color: #b9b717;
+
+        }
+    }
+
+    @keyframes animacaoTextSpan {
+        0% {
+            color: #fff;
+        }
+
+        25% {
+            color: #FC7B08;
+
+        }
+
+        50% {
+            color: #fff;
+
+        }
+
+        75% {
+            color: #FC7B08
+        }
+
+        100% {
+            color: #fff;
+
+        }
+    }
+
+    @keyframes imagemFlutuante {
+        50% {
+            transform: translateY(-5%);
+            -webkit-transform: translateY(-5%);
+            -moz-transform: translateY(-5%);
+            -ms-transform: translateY(-5%);
+            -o-transform: translateY(-5%);
+        }
+    }
+
 }
